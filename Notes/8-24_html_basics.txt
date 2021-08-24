@@ -7,12 +7,17 @@ all HTML documents look like:
     ...
     </body>
     </html>
+    
 
-HTML types:
+HTML elements (tags):
     headings
         <h1>This is a heading</h1>
+        <h2>This is a heading 2</h2>
+        <h3>This is a heading 3</h3>
+
+    paragraphs
         <p>This is a paragraph</p>
-    
+
 
 File Systems - Windows and Mac OS
     Typically, server side uses Unix structure
@@ -28,4 +33,14 @@ File Systems - Windows and Mac OS
         Mac OS uses strict divisions in folders; Applications go into Applications, Documents into Documents, and prefernces and support files in Library
         Uses HFS+ or APFS
         Macs can read and write to FAT32, but only read from NTFS
-        
+    
+    In order to avoid pathing issues when loading files on new computers, we use RELATIVE PATHS instead of full Paths
+
+How webpages work
+    1. Create content (in the form of text)
+    2. Structure the page (document) usig HTML elements
+    3. Structure the page's content (text) using HTML elements
+    4. Add non-textual content 
+
+    HyperText Markup Language
+    Not a programming language; specifies structure using markup notation
