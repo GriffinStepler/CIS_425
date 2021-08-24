@@ -1,0 +1,31 @@
+all HTML documents look like:
+    <!DOCTYPE html>
+    <html>
+    <body>
+    ...
+    > code body
+    ...
+    </body>
+    </html>
+
+HTML types:
+    headings
+        <h1>This is a heading</h1>
+        <p>This is a paragraph</p>
+    
+
+File Systems - Windows and Mac OS
+    Typically, server side uses Unix structure
+
+    Unix and Windows organize file systems differently
+        Windows uses volumes - logical separations of files (versus physical separations)
+        You need to know which drive and directory (and name) the file is in
+        Paths/file names are not case sensitive
+        Windows 10 uses NTFS (networking file system) by default
+        File Allocation Table 32 (FAT32) is an older Windows file system, but still used on certain media
+        Windows uses virtual folders; the path can differ from the GUI path
+
+        Mac OS uses strict divisions in folders; Applications go into Applications, Documents into Documents, and prefernces and support files in Library
+        Uses HFS+ or APFS
+        Macs can read and write to FAT32, but only read from NTFS
+        
