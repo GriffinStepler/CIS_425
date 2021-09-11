@@ -1,0 +1,89 @@
+<!--Griffin Stepler, E2, CIS425, 1:30pm-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Saguaro :: Contact</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1> 
+    </header>
+
+    <nav>
+        <!-- Here go navigation links -->
+        <a href="contact.html">Contact Us</a>
+        
+    </nav>
+
+    <main>
+       
+        <p>
+            Do you love cacti as much as we do? Tell us about your favorites.
+        </p>
+
+        <form method="POST" action="https://webdevbasics.net/scripts/pacific.php">
+            <label for="nameInput">What's your name? </label>
+            <input name="nameInput" id="nameInput" type="text"><br><br>
+
+            <label for="contactReason">Why are you conacting us?</label>
+            <select name="contactReason" id="contactReason">
+                <option value="Question">Question</option>
+                <option value="Comment">Comment</option>
+                <option value="ilikesaguaros">ilikesaguaros</option>
+            </select><br><br>
+
+            What kind of cacti do you have?
+            <label for="chkSaguaros">Saguaro</label>
+            <input type="checkbox" name="chkSaguaros" id="chkSaguaros" value="chkSaguaros">
+            <label for="chkSucculents">Succulents</label>
+            <input type="checkbox" name="chkSucculents" id="chkSucculents" value="chkSucculents"><br><br>
+            
+            <label for="emailInput">E-mail</label>
+            <input name="emailInput" id="emailInput" type="email"><br><br>
+            
+            <input hidden value="Hidden Field">
+
+            <label for="sagCount">How many saguaros do you have? </label>
+            <input type="number" name="sagCount" id="sagCount" min="0" max="10" required><br><br>
+          
+            <label for="saguaroLikes">Tell us what you like about saguaros.</label><br>
+            <textarea name="saguaroLikes" id="saguaroLikes" rows="10" cols="50"></textarea><br><br>
+
+            <label for="saguaroDate">When do you want saguaros?</label>
+            <input name="saguaroDate" id="saguaroDate" type="date"><br><br>
+
+            <label>Which ones do you like?</label><br>
+            <label for="succulents">Succulents</label>
+            <input type="radio" name="rdoLikes" id="succulents" value="succulents"><br>
+
+            <label for="cactus">Cactus</label>
+            <input type="radio" name="rdoLikes" id="cactus" value="cactus"><br><br>
+
+            <input type="reset" name="reset" id="reset">
+
+            <input type="submit" name="submit" id="submit">
+
+        </form>
+
+   </main>
+        
+    <hr>
+
+    <footer>
+        <!-- Links use anchor tags -->
+        Source: <a target="myframe" href="saguaro.html">https://en.wikipedia.org/wiki/Saguaro</a><br>
+    
+        <a href="#top">Go to the Top</a><br>
+        <a href="#facts">Go to Facts</a><br>
+
+        <small>Copyright &copy; 2021.</small>
+    </footer>
+
+
+</body>
+
+
+</html>
