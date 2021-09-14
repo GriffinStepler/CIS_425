@@ -1,0 +1,5 @@
+p {color: darkblue; font-weight: bold; border: 2px solid red;}
+body {background-color: lightslategrey; font-family: Arial, Helvetica, sans-serif; margin: 5px;}
+div {border-bottom: 1px solid; border-color: black;}
+#myFooter {font-size: 10pt;}
+.infoparagraphs {font-style: italic;}
