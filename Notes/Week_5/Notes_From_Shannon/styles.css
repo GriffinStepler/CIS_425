@@ -1,0 +1,47 @@
+/* External styles */
+/* Do not use any HTML tags */
+/* Embedded style*/
+
+/* universal selector, (*): wildcard character 
+probably not to be used often */
+
+/* go to paletton.com to find a new color, choose a color --> then go to tables/export on the webpage --> copy and paste the #value into VSS */
+/* * { color: #D4BF6A; } */
+
+/* * { color: rgb(0, 0, 255)} */
+
+body {background-color: lightblue; font-family:'Times New Roman', Times, serif; }
+h1 {font-family: Georgia, 'Times New Roman', Times, serif; 
+    text-align: center;
+    /* font-weight: bolder; */
+    font-size: 40pt; 
+}
+h1, h2, h3 {font-family: Arial, Helvetica, sans-serif; }
+/* take out center from html file (saguaro) */
+/* The order of the lines if the selectors are duplicate, does not matter if it does not duplicate.  */
+
+
+.saguaroKeyword {
+    font-weight: bolder;
+    color: rgb(255, 0, 0);
+}
+
+.pronunciation {
+    font-style: italic;
+}
+
+/* a is for anchor element selector */
+a {
+    text-decoration: none;
+}
+
+#introParagraph {
+    /* short hand notation */
+    margin: 10px 20px;
+    /* border-width: 10px;
+    border-style: dotted;
+    border-color: blue; */
+    border: 10px dotted purple
+}
+
+
