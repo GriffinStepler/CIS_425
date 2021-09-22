@@ -1,0 +1,21 @@
+/* selectors */
+
+/* Pseudo-classes
+are built in keywords that apply to elements in various states
+elementName:pseudoClass {} */
+a:visited {color: plum;}     /* color of a link that has already been visited */
+a:hover {color: red;}        /* color when hovering over a link */
+a:active {color: gold;}      /* color of the actively selected link */
+
+#saguarofigure:hover{border: 1px solid black;}
+
+/* Descendant combinators (selectors)
+selecting elements within another element */
+footer a {font-size: 9pt;}     /* changes font size for anchors located inside the footer */
+p span:first-child {color: black;}      /* selects the span within a paragraph ONLY when it's the first child of their parent */
+
+/* tables */
+table {border: 1px solid blue;}
+tr, td {border: 0; border-collapse: collapse;}
+th {background-color: darkblue; color: white;}
+tr:nth-of-type(even) {}
