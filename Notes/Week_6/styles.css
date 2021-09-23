@@ -39,5 +39,19 @@ tr:nth-of-type(even) {}
     margin-right: auto; /* centers the element by auto calculating */
     /* visibility: hidden; */ /* this hides the image, though it is still technically present */
     /* display: none; */ /* this prevents the image from taking up any space; it's not rendered or accounted for */
-    display: block; /* image takes up the block that it is in (default for many) */ 
+    display: block; /* changes display to block level (rather than inline) */ 
+}
+
+#wrapper {
+    max-width: 1000px;
+}
+
+main {
+    max-width: 800px;
+    border: 2px solid black;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 10px 20px 10px; /* shorthand starts at 12 oclock and counts clockwise */
+    box-shadow: 30px 20px 8px gray;
 }
