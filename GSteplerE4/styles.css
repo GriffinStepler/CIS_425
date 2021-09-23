@@ -1,0 +1,8 @@
+a {color: darkgreen;}
+a:visited {color: greenyellow;}
+a:hover {color: red;}
+a:active {color: lightcoral;}
+
+div img:hover {border: 1px red solid;}
+
+p span.twenties:first-child {color: red;}
