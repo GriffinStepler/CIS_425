@@ -19,3 +19,25 @@ table {border: 1px solid blue;}
 tr, td {border: 0; border-collapse: collapse;}
 th {background-color: darkblue; color: white;}
 tr:nth-of-type(even) {}
+
+#saguaroImage {
+    background-image: url("saguaro.jpg"); 
+    width: 200px; height: 300px; 
+    background-size: 100% 100%; /* percentage of the size of the parent */
+    background-repeat: no-repeat;
+    border: 1px solid black; /* specifying 3 valuesa at once is called shorthand notation */
+}
+
+#cactusImage {
+    background-image: url("cactus.jpg");
+    width: 200px; height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 1px solid black; /* the border width is added ON TOP of the above 200px */
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto; /* centers the element by auto calculating */
+    /* visibility: hidden; */ /* this hides the image, though it is still technically present */
+    /* display: none; */ /* this prevents the image from taking up any space; it's not rendered or accounted for */
+    display: block; /* image takes up the block that it is in (default for many) */ 
+}
