@@ -1,0 +1,50 @@
+p {
+    font-family: "Times"; 
+    font-style: normal; 
+    margin-left: 30px;
+ }
+
+ h1 {
+    color: green;
+    border-bottom: solid red
+}
+
+h2 {
+    color: red;
+}
+
+h1, h2 {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body {
+    margin-left: 50px
+}
+
+main {
+    border: 1px black solid;
+    box-shadow: 10px 10px 5px gray;
+}
+
+#twentyBill {
+    border: 2px solid darkgreen;
+    width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+div img {
+    height: 350px;
+    border: 1px dashed black;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
