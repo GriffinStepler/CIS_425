@@ -1,0 +1,56 @@
+#saguaroImage {
+
+    /* position: absolute;  fixed will measure distance from viewport (window) 
+    top: 50px;
+    left: 50px; */
+
+    float: left;
+
+    background-image: url("saguaro.jpg"); 
+    width: 200px; 
+    height: 300px; 
+    background-size: 200px 300px;
+    overflow: auto; /*hidden and scroll also here */
+
+    background-repeat: no-repeat;
+    border: 1px solid black; /* specifying 3 values at once is called shorthand notation */
+}
+
+/* #introParagraph p{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+} */
+
+#saguaroFacts {
+    clear: left; /* restores normal flow by clearing float: left */
+}
+
+#cactusImage {
+    background-image: url("cactus.jpg");
+    width: 200px; height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 1px solid black; /* the border width is added ON TOP of the above 200px */
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto; /* centers the element by auto calculating */
+    /* visibility: hidden; */ /* this hides the image, though it is still technically present */
+    /* display: none; */ /* this prevents the image from taking up any space; it's not rendered or accounted for */
+    display: block; /* changes display to block level (rather than inline) */ 
+}
+
+#wrapper {
+    max-width: 1000px;
+}
+
+main {
+    max-width: 800px;
+    border: 2px solid black;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 10px 20px 10px; /* shorthand starts at 12 oclock and counts clockwise */
+    box-shadow: 30px 20px 8px gray;
+}
