@@ -1,0 +1,239 @@
+/* External Styles */
+/* Do not use any html tags */
+/* selector { property: value;  } */
+
+/* universal selector, wildcard character */
+/* probably not to be used often */
+/* * { color: rgb(0, 0, 255); } */
+
+body { 
+    background-color: lightblue; 
+    font-family:'Times New Roman', Times, serif; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wrapper{
+
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+main{
+
+    border: 2px solid blue;
+    max-width: 90%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 40px;
+    box-shadow: 50px 40px 8px lightslategray;
+}
+
+
+
+h1 { 
+    /* font-family:Georgia, 'Times New Roman',Times, serif; */
+    font-family: 'Stick No Bills', sans-serif;
+
+    text-align:center;    
+    /* font-weight: bolder; */
+
+
+    /* ABSOLUTE LENGTH
+    72 points in one inch */
+    /* 96 pixels in one inch */
+
+    /* RELATIVE LENGTHS
+     1 em - relative size to the existing font size
+     vh/vw - in terms of the height/width of the viewport
+    */
+    
+    font-size: 2em;
+}
+ h2 {
+     font-size: 1em;
+ }
+
+nav {
+
+    background-color: darkblue;
+    margin: 20px;
+    padding: 20px;
+    top: 20px;
+    position: sticky;
+    /* display: block; */
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 20px;
+
+}
+
+nav a, nav a:visited{
+    padding: 10px;
+    margin: 10px;
+    color: yellow;
+    background-color: white;
+}
+
+nav a:nth-child(1){
+    border-radius: 10px 0px;
+    background-color: red;
+
+}
+
+
+
+
+/* #homeButton{
+    border-radius: 10px 0px;
+
+} */
+
+
+h2, h3 { font-family:Arial, Helvetica, sans-serif; }
+.saguaroKeyword {
+    /* font-weight: bolder; */
+    color: rgb(255, 0, 0);
+    
+}
+
+.pronunciation { 
+    font-style: italic;
+}
+
+#introParagraph{
+
+    padding-right: 50px;
+
+
+    /* short hand notation */
+    /* margin: 20px;
+    width: 400px;
+    border: 10px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: lightseagreen; */
+
+    /* height: 200px;
+    width: 200px; */
+    /* overflow: hidden; */
+
+
+}
+
+/* Allows three dots to be shown when text is being cut off */
+/* #introParagraph p{
+
+    text-overflow: ellipsis;
+
+} */
+
+#saguaroImage {
+
+     /* fixed will measure distance from the viewport 
+    position: fixed;
+
+    top: 50px;
+    left: 50px;*/
+    margin-right: 50px;
+    margin-bottom: 50px;
+
+    float: left;
+    /* margin-left: 40px; */
+
+    background-image: url("saguaro.jpg");
+    width: 200px;
+    height: 300px;
+    /* width in %age of the size of the parent */
+    /* background-size: 100% 100%; */
+    background-size: 200px 300px;
+    overflow: auto;
+
+    background-repeat:no-repeat; 
+    border: 1px solid blue;
+    box-sizing: content-box;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* max-width: 300px; */
+}
+
+#SaguaroFacts{
+
+    clear: both;
+
+}
+
+
+
+
+#cactusImage {
+
+    background-image: url("cactus.jpg");
+    width: 200px;
+    height: 300px;
+    /* visibility:hidden; */
+    display: block;
+}
+
+
+/* "a" is for anchor element selector */
+a:link {
+    text-decoration: none;
+    color:darkgreen;
+
+}
+/* Pseudo-classes 
+are built-in "keywords" that apply to elements in various states.
+*/
+a:visited{
+     /* an anchor link which has already been visited */
+    color: purple;
+}
+a:hover{
+    /* move your mouse over an element */
+    color: red;
+}
+a:active{
+    color: gold;
+}
+/* isolate an achor link inside a footer */
+footer a{
+    /* the space character is the descendant selector (combinator) */
+    font-size: 9pt;
+}
+
+p span:first-child{
+    /* Apply this style to those span elements which are the first child of their parent, inside paragraphs */
+    font-weight: bold;
+}
+
+table {
+    border: 1px solid blue;
+    border-collapse: collapse
+}
+tr, td {
+    border: 0;
+    border-collapse: collapse;
+}
+th{
+    background-color: darkblue;
+    color: white;
+}
+tr:nth-of-type(even){
+    background-color: lightgray;
+}
+
+
+img:hover{
+    border: 2px solid darkslateblue;
+}
+
+
+
+
+
