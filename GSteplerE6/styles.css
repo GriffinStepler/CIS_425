@@ -1,3 +1,4 @@
+/* Griffin Stepler, E6, CIS425, 1:30pm */
 h1 {
     color: green;
     border-bottom: solid red
@@ -21,14 +22,21 @@ main {
 h1, h2 {margin: 20px;}
 body {margin: 50px;}
 
-#twentyBill{
+#twentyBill {
     border: 2px solid darkgreen;
-    width: 600px;
+    width: 800px;
     margin: 50px 20px;
     padding: 50px 10px;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
+}
 
+#twentyHeaderImage {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20 20 20;
 }
 
 div img {
