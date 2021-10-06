@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Saguaro</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <form method="GET" 
+        action="https://webdevbasics.net/scripts/pacific.php">
+        
+        <label>Customer Name: </label>
+        <input type="text" name="customerName" id="customerName"  required><br><br>
+    
+    
+            <label>What is the issue?</label>
+            <select name="issue">
+                <option value="1">Question</option>
+                <option name="issueComment">Comment</option>
+                <option value="3">Issue with Order</option>
+            </select><br><br>
+    
+            <label>What is your Order Qty?</label>
+            <input id="Qty" name="Qty" type="number" min="1" max="10"><br><br>
+    
+            <label>E-mail Address</label>
+            <input type="email"><br><br>
+    
+            <input type="hidden" value="203482094">
+    
+            <label>Password</label>
+            <input type="password"><br><br>
+
+            <label>Any Comments?</label><br>
+            <textarea name="detailedComments"
+            rows="10" cols="50"
+            ></textarea><br><br>
+
+            <label>What day deliveries do you prefer?</label><br>
+            <label for="chkMonday" >
+                Monday
+            </label>
+            <input id="chkMonday"  type="checkbox"><br>
+
+            <label for="chkWednesday">
+                Wednesday
+            </label>
+            <input id="chkWednesday" type="checkbox"><br>
+
+            <label for="chkWeekend">
+                Weekends
+            </label>
+            <input id="chkWeekend" type="checkbox"><br>
+
+            <label>
+                What is the issue?
+            </label>
+
+            <label for="rdoQuestion">Question</label>
+            <input type="radio" id="rdoQuestion"  name="rdoQuestion" value="Question">
+
+            <label for="rdoComment">Comment</label>
+            <input type="radio" name="rdoIssues" value="Comment">
+
+            <label for="rdoOrderIssue">Issue with Order</label>
+            <input type="radio" name="rdoIssues" value="OrderIssue">
+
+
+            <input type="submit" value="Send my Data">
+            <input type="reset">
+
+        </form>
+
+    
+
+
+
+
+        <!-- Go to <a target="myIframe" href="http://www.visitPhoenix.com">Visit Phoenix</a><br>
+
+        <iframe name="myIframe" src=""></iframe>
+
+        <iframe name="myIframe" src=""></iframe> -->
+
+    </body>
+
+
+</html>
