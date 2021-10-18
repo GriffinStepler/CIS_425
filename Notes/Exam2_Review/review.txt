@@ -1,0 +1,23 @@
+Links
+	When linking to an internal webpage on your own site, use relative
+	When linking to an external page or file, use absolute paths
+
+Semantic and nonsemantic tags
+	Added semantic tags in HTML5
+	Semantic tags are those that give MEANING - they indicate what the content of the tag might be (this is broad)
+		they don't natively do anything (though certain ones are rendered in special ways, like emphasis)
+	Nonsemantic just give formatting, with little indication to the content
+
+<div></div>
+	This tag is used to organize content into chunks
+	Give precendent to specailized div tags (like aside, footer, etc.)
+
+Block level vs. Inline tags
+	<span> is an inline tag - it does not create a new line or enter a new block
+	<p> is a block level tage - it creates a new block for the contained content
+
+The descendent selector is the SPACE character
+
+Float elements
+	floats remove items from the normal flow of html
+	float: left; makes an element move to the left of the container and allows other elements to wrap on the right
