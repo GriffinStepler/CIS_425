@@ -21,3 +21,4 @@ The descendent selector is the SPACE character
 Float elements
 	floats remove items from the normal flow of html
 	float: left; makes an element move to the left of the container and allows other elements to wrap on the right
+	
