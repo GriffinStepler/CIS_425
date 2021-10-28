@@ -12,5 +12,3 @@ function handleButton( number  ){
     displayLabelRef.textContent = "23094";
 
 }
-
-
