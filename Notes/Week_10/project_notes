@@ -1,0 +1,16 @@
+// for testing purposes, hardcode when necessary
+
+// decimal
+let number = "2.3";
+// returns the position of the first occurrence of the substring
+if (number.indexof("."));
+
+// use strict, var, let, const
+// we do not have to define variables in javascript (though it helps us if we follow structure)
+"use strict"; // requires that variables be declared
+
+// var declares a variable in global scope, can redeclare in same scope lol I guess there are no rules in this language
+
+// let declares a variable in local scope
+
+// const declares a constant variable (unchanging value)
