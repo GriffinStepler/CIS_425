@@ -1,0 +1,63 @@
+/* Griffin Stepler, A5, CIS425, 1:30pm */
+header h1 {
+    color: black;
+    font-weight: bold;
+    margin: auto;
+    width: 50%;
+}
+
+#logoDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#logo {
+    width: 5%;
+    height: 5%;
+}
+
+h3 {
+    color: whitesmoke;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+hr {
+    border: 1px solid maroon;
+}
+
+form {display: table;}
+
+p {display: table-row;}
+
+label {
+    display: table-cell;
+    padding-right: 10px;
+}
+
+input {display: table-cell;}
+
+select {
+    display: table-cell;
+    width: 200px;
+}
+
+button {display: table-cell;}
+
+body, html {
+    height: 100%;
+}
+
+.bgimg {
+    background-image: url("hayden.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.information {
+    color: lightgray;
+    background-color: rgba(10, 10, 10, 0.7);
+}

@@ -1,0 +1,75 @@
+<!-- Griffin Stepler, A5, CIS425, 1:30pm -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript Basics</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body class="bgimg">
+        <div>
+
+            <header>
+                <div id="logoDiv">
+                    <img id="logo" src="asu_logo.png">
+                </div>
+                <h1>Course Registration System</h1>
+            </header>
+
+            <hr>
+
+            <main>
+                <div class="information">
+                    <h3>Student and Course Info</h3>
+
+                    <form>
+                        <p>
+                            <label for="fname">First Name: </label>
+                            <input type="text" id="fname">
+                        </p>
+
+                        <p>
+                            <label for="lname">Last Name: </label>
+                            <input type="text" id="lname">
+                        </p>
+
+                        <br>
+
+                        <p>
+                            <label for="semester">Semester: </label>
+                            <select id="semester">
+                                <option style="display:none">Select and Option</option>
+                                <option value="Fall 2021">Fall 2020</option>
+                                <option value="Spring 2021">Spring 2021</option>
+                                <option value="Summer 2021">Summer 2021</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="course">Course Name: </label>
+                            <select id="course">
+                                <option style="display:none">Select and Option</option>
+                                <option value="CIS 425">CIS 425 - Web Design</option>
+                                <option value="CIS 401">CIS 401 - Cyber Risk</option>
+                                <option value="CIS 365">CIS 365 - Database Design</option>
+                            </select>
+                        </p>
+
+                        <br>
+
+                        <button type="button" onclick="register();">Register</button>
+                    </form>
+                    
+                    <h3>Registered Course:</h3>
+
+                    <div id="result">
+                        
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
