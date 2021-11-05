@@ -1,0 +1,50 @@
+/* Griffin Stepler, Project 1, CIS425, 1:30pm */
+
+.calcButton {
+    height: 40px;
+    width: 40px;
+    padding: 6px;
+    margin-top:2px;
+    /*
+    margin-left: 2px;
+    margin-right: 2px;
+    */
+    vertical-align: top; /* this prevents shifting issues upon value assignment */
+}
+
+#evaluate {
+    width: 172px;
+}
+
+.calcButton:hover {
+    background-color: rgb(197, 194, 194);
+}
+
+.calcButton:active {
+    background-color: rgb(141, 140, 140);
+}
+
+#display {
+    font-size: 20pt;
+    text-align: right;
+    height: 40px;
+    width: 168px;
+    vertical-align: top; /* this prevents shifting issues upon value assignment */
+}
+
+#calcWrapper {
+    display: table;
+    margin: auto;
+}
+
+#calcDiv {
+    display: table-row;
+    background-color: rgb(145, 195, 224);
+    height: 280px;
+    width: 200px;
+}
+
+#calc {
+    display: table-cell;
+    padding: 5px 5px 5px 5px;
+}
