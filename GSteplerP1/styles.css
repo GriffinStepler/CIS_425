@@ -1,42 +1,81 @@
 /* Griffin Stepler, Project 1, CIS425, 1:30pm */
 
 .calcButton {
-    height: 40px;
-    width: 40px;
+    height: 80px;
+    width: 80px;
     padding: 6px;
-    margin-top:2px;
+    margin-top:4px;
     /*
     margin-left: 2px;
     margin-right: 2px;
     */
     vertical-align: top; /* this prevents shifting issues upon value assignment */
-    font-size: 12pt;
+    font-size: 18pt;
     font-weight: bold;
 }
 
-#evaluate {
-    width: 172px;
-}
-
 .calcButton:hover {
-    background-color: rgb(197, 194, 194);
+    background-color: rgb(228, 227, 227);
 }
 
 .calcButton:active {
+    background-color: rgb(172, 170, 170);
+}
+
+.opButton {
+    height: 80px;
+    width: 80px;
+    padding: 6px;
+    margin-top:4px;
+    /*
+    margin-left: 2px;
+    margin-right: 2px;
+    */
+    vertical-align: top;
+    font-size: 18pt;
+    font-weight: bold;
+    background-color:rgb(190, 187, 187);
+}
+
+.opButton:hover {
+    background-color: rgb(158, 158, 158);
+}
+
+.opButton:active {
     background-color: rgb(141, 140, 140);
 }
 
+.evalButton {
+    height: 80px;
+    width: 332px;
+    padding: 6px;
+    margin-top:4px;
+    vertical-align: top;
+    font-size: 18pt;
+    font-weight: bold;
+    background-color:rgb(226, 206, 21);
+}
+
+.evalButton:hover {
+    background-color:rgb(214, 195, 23);
+}
+
+.evalButton:active {
+    background-color: rgb(202, 184, 19);
+}
+
 #display {
-    font-size: 20pt;
+    font-size: 28pt;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: right;
-    height: 40px;
-    width: 172px;
+    height: 80px;
+    width: 332px;
     vertical-align: top; /* this prevents shifting issues upon value assignment */
 }
 
-#display:hover {
-    
+header {
+    display: table;
+    margin: auto;
 }
 
 #calcWrapper {
@@ -46,9 +85,8 @@
 
 #calcDiv {
     display: table-row;
-    background-color: rgb(145, 195, 224);
-    height: 280px;
-    width: 200px;
+    background-color: #8b1938;
+    height: 560px;
 }
 
 #calc {
@@ -83,4 +121,44 @@
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+    top: -5px;
+    right: 105%;
+}
+
+body, html {
+    height: 100%;
+}
+
+.bgimg {
+    background-image: url("bikeman.jpg"); /* fun fact: I took this picture! */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.credits {
+    color: rgb(235, 235, 235);
+}
+
+.credits a {
+    color: rgb(226, 206, 21);
+}
+
+.credits a:visited {
+    color: rgb(226, 206, 21);
+}
+
+.credits a:hover {
+    color: rgb(214, 195, 23);
+}
+
+.credits a:active {
+    color: rgb(202, 184, 19);
+}
+
+#copyright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }

@@ -4,14 +4,27 @@ const display = document.getElementById("display");
 let num1 = 0;
 let num2 = 0;
 let op = "";
+let dec = false;
 
 
 function numberPress(num) {
     // invoked on pressing a number value
+    let numeral = num + ""; // prevents issues with numeric vs text types colliding
     console.log(`Invoking numberPress ${num}`);
-    display.value += num;
+    if (numeral == "." && dec == true) {
+        console.log("oh this guy keeps hitting decimal... NOT ALLOWED!")
+        return;
+    }
+    else if (numeral == ".") {
+        console.log("marking a decimal");
+        display.value += num;
+        dec = true;
+        console.log("decimal marked");
+    }
+    else {
+        display.value += num;
+    }
     console.log(`Successfully invoked numberPress ${num}`);
-    // TODO: handle multiple decimal inputs; currently fails
 }
 
 
@@ -21,20 +34,23 @@ function operatorPress(operator) {
 
     let temp = display.value + "";
 
-    if (temp.indexOf(".") != -1) {
-        console.log("Parsing decimals...");
-        num1 = temp.slice(0,temp.indexOf(".")) + temp.slice(temp.lastIndexOf("."));
-        // the above solution slices the string to get the whole number and remainder portion separately, the concatenates them with a decimal
-        console.log(`Decimal parsed: ${num1}`);
-    }
-    else {
-        console.log("Parsing whole number...");
-        num1 = display.value;
-        console.log(`Number parsed: ${num1}`);
-    }
+    // if (temp.indexOf(".") != -1) {
+    //     console.log("Parsing decimals...");
+    //     num1 = temp.slice(0,temp.indexOf(".")) + temp.slice(temp.lastIndexOf("."));
+    //     // the above solution slices the string to get the whole number and remainder portion separately, the concatenates them with a decimal
+    //     console.log(`Decimal parsed: ${num1}`);
+    // }
+    // else {
+    //     console.log("Parsing whole number...");
+    //     num1 = display.value;
+    //     console.log(`Number parsed: ${num1}`);
+    // }
+
+    num1 = display.value;
 
     op = operator;
     display.value = "";
+    dec = false;
     console.log(`Successfully invoked operatorPress ${operator}`);
 }
 
@@ -46,6 +62,7 @@ function ac() {
     num1 = 0;
     num2 = 0;
     op = "";
+    dec = false;
     console.log("Successfully invoked clear");
 }
 
@@ -54,6 +71,7 @@ function eval() {
     // assign num2, evaluate based on num1 and op values, return to display
     console.log(`Invoking eval ${num1} ${op} ${num2}`);
     num2 = display.value;
+    dec = false;
 
     switch (op) {
         case "*":
