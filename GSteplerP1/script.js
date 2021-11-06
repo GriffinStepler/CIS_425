@@ -18,14 +18,28 @@ function numberPress(num) {
 function operatorPress(operator) {
     // assign num1 to current value of display, set operator, clear display
     console.log(`Invoking operatorPress ${operator}`);
-    num1 = display.value;
+
+    let temp = display.value + "";
+
+    if (temp.indexOf(".") != -1) {
+        console.log("Parsing decimals...");
+        num1 = temp.slice(0,temp.indexOf(".")) + temp.slice(temp.lastIndexOf("."));
+        // the above solution slices the string to get the whole number and remainder portion separately, the concatenates them with a decimal
+        console.log(`Decimal parsed: ${num1}`);
+    }
+    else {
+        console.log("Parsing whole number...");
+        num1 = display.value;
+        console.log(`Number parsed: ${num1}`);
+    }
+
     op = operator;
     display.value = "";
     console.log(`Successfully invoked operatorPress ${operator}`);
 }
 
 
-function ce() {
+function ac() {
     // resets the display value and all calculation variables
     console.log("Invoking clear");
     display.value = "";
