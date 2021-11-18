@@ -1,0 +1,87 @@
+<!-- Griffin Stepler, A6, CIS425, 1:30pm -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="styles.css" rel="stylesheet">
+        <title>401K Calculator</title>
+    </head>
+
+    <body>
+        <div id="inpDiv">
+            <div id="imgHolder">
+                <img id="finLogo" src="finImg.png" alt="Financial Institution Image">
+            </div>
+
+            <div id="textHolder">
+                <h1>401K Future Calculator</h1>
+                <hr>
+                <table id=inputTable>
+                    <tr>
+                        <td>Yearly Investment ($)</td>
+                        <td>
+                            <select class="tInput" id="amountInput">
+                                <option disabled selected value style="display:none"></option>
+                                <option value="1000">$1,000</option>
+                                <option value="2000">$2,000</option>
+                                <option value="3000">$3,000</option>
+                                <option value="4000">$4,000</option>
+                                <option value="5000">$5,000</option>
+                                <option value="6000">$6,000</option>
+                                <option value="7000">$7,000</option>
+                                <option value="8000">$8,000</option>
+                                <option value="9000">$9,000</option>
+                                <option value="10000">$10,000</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Annual Interest Rate (%)</td>
+                        <td>
+                            <input type="text" class="tInput" id="rateInput" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Number of Years (#)</td>
+                        <td>
+                            <input type="text" class="tInput" id="yearInput" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Future Value ($)</td>
+                        <td>
+                            <span id="fvalSpan"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" class="tButton" value="Calculate" onclick="verify();">
+                        </td>
+                        <td>
+                            <input type="button" class="tButton" value="Clear" onclick="wipe();">
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+        <div id="resDiv">
+            <div id="resultsHolder">
+                <table id="resultTable">
+                    <tr>
+                        <th> Yearly Investment </th>
+                        <th> Interest Rate </th>
+                        <th> Years </th>
+                        <th> Future Value </th>
+                    </tr>
+                </table>
+            </div>
+
+            <script>
+                document.getElementById("resultsHolder").style.visibility = "hidden";
+            </script>
+        </div>
+    </body>
+    <script src="scripts.js"></script>
+</html>

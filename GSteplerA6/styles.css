@@ -1,0 +1,72 @@
+/* Griffin Stepler, A6, CIS425, 1:30pm */
+
+h1 {
+    color: #26437e;
+    text-align: center;
+}
+
+#finLogo {
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+#textHolder {
+    display: inline-block;
+}
+
+.tInput {
+    width: 180px;
+}
+
+.tButton {
+    width: 180px;
+    background-color: #26437e;
+    /* background-color: #20bba5; */
+    color: whitesmoke;
+}
+
+#resultTable {
+    border: none; 
+    border-collapse: collapse;
+    border-spacing: 15px
+}
+
+#resultTable th {
+    border-left: 1px solid grey;
+}
+
+#resultTable th:first-child {
+    border-left: none;
+}
+
+#resultTable td {
+    text-align: center;
+    border-left: 1px solid grey;
+}
+
+#resultTable td:first-child {
+    border-left: none;
+}
+
+#resultTable tr:nth-child(even) {
+    background: #199784;
+}
+
+#inpDiv {
+    margin: auto;
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px 10px 80px 10px;
+    background-color: whitesmoke;
+}
+
+#resDiv {
+    clear: left;
+    margin: auto;
+    width: 22%;
+    color: whitesmoke;
+}
+
+body {
+    background-color: #20bba5;
+}
