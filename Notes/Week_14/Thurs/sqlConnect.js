@@ -26,6 +26,8 @@ let con = mysql.createConnection(connectionString);
 // STEP 4: initiate connection
 // function to handle errors - anonymous function (doesn't need a name, passed as an argument)
 con.connect(
+    // this function only executes AFTER connection has succeeded or failed
+    // so we pass the entire function body, for the code to be executed when necessary 
     function (err) {
         if (err) throw err;
         else console.log(`Connected to ${connectionString.database} Database`);
@@ -35,6 +37,8 @@ con.connect(
 // STEP 5: run query
 let sqlQuery = "SELECT first_name, last_name FROM actor limit 10;";
 // pass query and reference to a callback function which will process results
+// the processResult method cannot be executed right now
+// this is why we pass an address to the method (execute it when you need to)
 con.query(sqlQuery, processResult);
 
 // STEP 6: close connection

@@ -1,0 +1,4 @@
+hidden input fields allow form communication without explicit fields (optional)
+    assignment 7 helps with the form field practice
+    this option is "more complex" but is cool
+
