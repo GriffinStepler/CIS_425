@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="styles.css" rel="stylesheet">
+        <title>Contact Us</title>
+    </head>
+
+    <body>
+        <h1>Contact Us</h1>
+        <form action="http://localhost:8080" method="get">
+            <div>
+                <label>What's your name? </label>
+                <input type="text" name="nameInput" id="nameInput">
+            </div><br>
+
+            <div>
+                <label>What type of positions are you looking for? </label>
+                <select name="positionSelect" id="positionSelect">
+                    <option value="0">Internships</option>
+                    <option value="1">Full-Time Jobs</option>
+                    <option value="3">Not looking for positions</option>
+                </select>
+            </div><br>
+
+            <div>
+                <label>What's your major? </label>
+                <label>CIS </label>
+                <input type="checkbox" name="cisCheck" id="cisCheck">
+                <label>BDA </label>
+                <input type="checkbox" name="bdaCheck" id="bdaCheck">
+            </div><br>
+
+            <div>
+                <label>Email: </label>
+                <input type="text" name="emailInput" id="emailInput">
+            </div><br>
+
+            <div>
+                <label>How many semesters do you have left to graduate? </label>
+                <input type="number" name="semesterInput" id="semesterInput" min="0" max="10">
+            </div><br>
+
+            <div>
+                <label>I'm interested in receiving more information by email. </label>
+                <label>Yes </label>
+                <input type="radio" name="infoRadio" id="infoRadioYes" value="1">
+                <label>No </label>
+                <input type="radio" name="infoRadio" id="infoRadioNo" value="0">
+            </div><br>
+        </form>
+    </body>
+</html>
