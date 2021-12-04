@@ -1,4 +1,6 @@
 <!-- Griffin Stepler, Project 2, CIS425 1:30pm -->
+<!-- Website shows collapsibles that give "hints" about the movie, select one to learn more! -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -14,23 +16,72 @@
         </div>
 
         <div name="Introduction">
-            <p></p>
+            <p>Read through each collapsable to find something that catches your eye... or choose to learn about a random movie!</p>
         </div>
 
-        <div name="Movie">
-
+        <button type="button" class="collapsible">Affair Prejudice</button>
+        <div class="content" name="Movie1Content">
+            <p>Monkeys, men, and sports equipment... all in an environment foreign to them!</p>
+            <label>
+                <input type="radio" name="learnMore" value="4">
+                I would like to learn more!
+            </label>
         </div>
 
-        <div name="Movie">
-
+        <button type="button" class="collapsible">Airplane Sierra</button>
+        <div class="content" name="Movie1Content">
+            <p>Boats, butlers, and hunters... but this isn't Batman, Alfred.</p>
+            <label>
+                <input type="radio" name="learnMore" value="7">
+                I would like to learn more!
+            </label>
         </div>
 
-        <div name="Movie">
-
+        <button type="button" class="collapsible">Aiport Pollock</button>
+        <div class="content" name="Movie1Content">
+            <p>Discover Ancient India in a primate on primate confrontation.</p>
+            <label>
+                <input type="radio" name="learnMore" value="8">
+                I would like to learn more!
+            </label>
         </div>
 
-        <div name="Movie">
-            
+        <button type="button" class="collapsible">Alabama Devil</button>
+        <div class="content" name="Movie1Content">
+            <p>Who knew the firepower a database administrator could pack?!</p>
+            <label>
+                <input type="radio" name="learnMore" value="9">
+                I would like to learn more!
+            </label>
         </div>
+
+        <button type="button" class="collapsible">Random</button>
+        <div class="content" name="Movie1Content">
+            <p>For if you're unsure what you want... or you're feeling particularly lucky</p>
+            <label>    
+                <input type="radio" name="learnMore" value="0">
+                I would like fate to decide!
+            </label>
+        </div>
+
+        <script>
+            // this is from w3schools.com - howto create an animated collapsible (slide down)
+            // referenced from https://www.w3schools.com/howto/howto_js_collapsible.asp
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                }); // addEventListener();
+            } // for loop
+        </script>
+
     </body>
 </html>

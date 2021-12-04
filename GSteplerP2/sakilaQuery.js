@@ -1,4 +1,5 @@
-// Griffin Stepler, E12, CIS425, 1:30pm
+// Griffin Stepler, Project 2, CIS425, 1:30pm
+// this script is to pull the first 10 films from the Sakila database
 
 // global variables
 let mysql = require("mysql");  // why does VSC suggest that this is changed into the below line?
