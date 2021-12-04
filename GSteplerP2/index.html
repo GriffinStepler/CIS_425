@@ -10,59 +10,61 @@
     </head>
 
     <body>
-        <div name="Title Card">
-            <h1>Griffin's Favorite Movies</h1>
-            <h4>A collection of some of the best movies in American film, curated by a premier film critic (just kidding!)</h4>
-        </div>
+        <form action="http://localhost:8080" method="get">
+            <div name="Title Card">
+                <h1>Griffin's Favorite Movies</h1>
+                <h4>A collection of some of the best movies in American film, curated by a premier film critic (just kidding!)</h4>
+            </div>
 
-        <div name="Introduction">
-            <p>Read through each collapsable to find something that catches your eye... or choose to learn about a random movie!</p>
-        </div>
+            <div name="Introduction">
+                <p>Read through each collapsable to find something that catches your eye... or choose to learn about a random movie!</p>
+            </div>
 
-        <button type="button" class="collapsible">Affair Prejudice</button>
-        <div class="content" name="Movie1Content">
-            <p>Monkeys, men, and sports equipment... all in an environment foreign to them!</p>
-            <label>
-                <input type="radio" name="learnMore" value="4">
-                I would like to learn more!
-            </label>
-        </div>
+            <button type="button" class="collapsible">Affair Prejudice</button>
+            <div class="content" name="Movie1Content">
+                <p>Monkeys, men, and sports equipment... all in an environment foreign to them!</p>
+                <label>
+                    <input type="radio" name="learnMore" value="4">
+                    I would like to learn more!
+                </label>
+            </div>
 
-        <button type="button" class="collapsible">Airplane Sierra</button>
-        <div class="content" name="Movie1Content">
-            <p>Boats, butlers, and hunters... but this isn't Batman, Alfred.</p>
-            <label>
-                <input type="radio" name="learnMore" value="7">
-                I would like to learn more!
-            </label>
-        </div>
+            <button type="button" class="collapsible">Airplane Sierra</button>
+            <div class="content" name="Movie1Content">
+                <p>Boats, butlers, and hunters... but this isn't Batman, Alfred.</p>
+                <label>
+                    <input type="radio" name="learnMore" value="7">
+                    I would like to learn more!
+                </label>
+            </div>
 
-        <button type="button" class="collapsible">Aiport Pollock</button>
-        <div class="content" name="Movie1Content">
-            <p>Discover Ancient India in a primate on primate confrontation.</p>
-            <label>
-                <input type="radio" name="learnMore" value="8">
-                I would like to learn more!
-            </label>
-        </div>
+            <button type="button" class="collapsible">Aiport Pollock</button>
+            <div class="content" name="Movie1Content">
+                <p>Discover Ancient India in a primate on primate confrontation.</p>
+                <label>
+                    <input type="radio" name="learnMore" value="8">
+                    I would like to learn more!
+                </label>
+            </div>
 
-        <button type="button" class="collapsible">Alabama Devil</button>
-        <div class="content" name="Movie1Content">
-            <p>Who knew the firepower a database administrator could pack?!</p>
-            <label>
-                <input type="radio" name="learnMore" value="9">
-                I would like to learn more!
-            </label>
-        </div>
+            <button type="button" class="collapsible">Alabama Devil</button>
+            <div class="content" name="Movie1Content">
+                <p>Who knew the firepower a database administrator could pack?!</p>
+                <label>
+                    <input type="radio" name="learnMore" value="9">
+                    I would like to learn more!
+                </label>
+            </div>
 
-        <button type="button" class="collapsible">Random</button>
-        <div class="content" name="Movie1Content">
-            <p>For if you're unsure what you want... or you're feeling particularly lucky</p>
-            <label>    
-                <input type="radio" name="learnMore" value="0">
-                I would like fate to decide!
-            </label>
-        </div>
+            <button type="button" class="collapsible">Random</button>
+            <div class="content" name="Movie1Content">
+                <p>For if you're unsure what you want... or you're feeling particularly lucky</p>
+                <label>    
+                    <input type="radio" name="learnMore" value="0">
+                    I would like fate to decide!
+                </label>
+            </div>
+        </form>
 
         <script>
             // this is from w3schools.com - howto create an animated collapsible (slide down)
