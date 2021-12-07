@@ -9,18 +9,22 @@
         <title>Griffin's Movies</title>
     </head>
 
-    <body>
+    <body class="whole">
         <form action="http://localhost:8080" method="get">
             <div name="Title Card">
+                <div id="imgHolder">
+                    <img src="filmReel.png" alt="Film Reel">
+                </div>
                 <h1>Griffin's Favorite Movies</h1>
-                <h4>A collection of some of the best movies in American film, curated by a premier film critic (just kidding!)</h4>
+                <h4>A collection of some of the best movies in American film, curated by a premier film critic. <small>Don't question the title, just roll with it.</small></h4>
             </div>
 
-            <div name="Introduction">
-                <p>Read through each collapsable to find something that catches your eye... or choose to learn about a random movie!</p>
+            <div name="Introduction" class="subtext">
+                <p>Below are my suggestions for films you might like, or if you don't trust me, go for something completely random from the long list provided by MySQL's Sakila!</p>
+                <p>Just remember... <scary>I'll know</scary> if you don't choose one of my favorites... just kidding! <scary>Or am I?</scary> Guess you'll never know because the JavaScript doesn't run client side haha!</p>
             </div>
 
-            <button type="button" class="collapsible">Affair Prejudice</button>
+            <button type="button" class="collapsible"><em>Affair Prejudice</em></button>
             <div class="content" name="Movie1Content">
                 <p>Monkeys, men, and sports equipment... all in an environment foreign to them!</p>
                 <label>
@@ -29,8 +33,8 @@
                 </label>
             </div>
 
-            <button type="button" class="collapsible">Airplane Sierra</button>
-            <div class="content" name="Movie1Content">
+            <button type="button" class="collapsible"><em>Airplane Sierra</em></button>
+            <div class="content" name="Movie2Content">
                 <p>Boats, butlers, and hunters... but this isn't Batman, Alfred.</p>
                 <label>
                     <input type="radio" name="learnMore" value="7">
@@ -38,8 +42,8 @@
                 </label>
             </div>
 
-            <button type="button" class="collapsible">Aiport Pollock</button>
-            <div class="content" name="Movie1Content">
+            <button type="button" class="collapsible"><em>Aiport Pollock</em></button>
+            <div class="content" name="Movie3Content">
                 <p>Discover Ancient India in a primate on primate confrontation.</p>
                 <label>
                     <input type="radio" name="learnMore" value="8">
@@ -47,8 +51,8 @@
                 </label>
             </div>
 
-            <button type="button" class="collapsible">Alabama Devil</button>
-            <div class="content" name="Movie1Content">
+            <button type="button" class="collapsible"><em>Alabama Devil</em></button>
+            <div class="content" name="Movie4Content">
                 <p>Who knew the firepower a database administrator could pack?!</p>
                 <label>
                     <input type="radio" name="learnMore" value="9">
@@ -56,8 +60,8 @@
                 </label>
             </div>
 
-            <button type="button" class="collapsible">Random</button>
-            <div class="content" name="Movie1Content">
+            <button type="button" class="collapsible"><strong>Random</strong></button>
+            <div class="content" name="Movie5Content">
                 <p>For if you're unsure what you want... or you're feeling particularly lucky</p>
                 <label>    
                     <input type="radio" name="learnMore" value="0">
@@ -68,27 +72,31 @@
             <br><br>
 
             <div>
-                <input type="submit" value="Learn!">
+                <input id="submitButton" type="submit" value="Learn!">
             </div>
         </form>
 
         <script>
             // this is from w3schools.com - howto create an animated collapsible (slide down)
             // referenced from https://www.w3schools.com/howto/howto_js_collapsible.asp
-            var coll = document.getElementsByClassName("collapsible");
-            var i;
+            let collapsible = document.getElementsByClassName("collapsible");
+            let i;
 
-            for (i = 0; i < coll.length; i++) {
-                coll[i].addEventListener("click", function() {
+            // for loop to define new size of collapsible on toggle
+            for (i = 0; i < collapsible.length; i++) {
+                // create an event listener for clicking (like an onClick)
+                collapsible[i].addEventListener("click", function() {
                     this.classList.toggle("active");
+                    // allows us to access the "sibling" element (content div)
                     var content = this.nextElementSibling;
+                    // nullify the height of the div; allows animation to occur when combined with transition CSS
                     if (content.style.maxHeight) {
                         content.style.maxHeight = null;
                     } else {
                         content.style.maxHeight = content.scrollHeight + "px";
                     }
-                }); // addEventListener();
-            } // for loop
+                });
+            }
         </script>
 
     </body>

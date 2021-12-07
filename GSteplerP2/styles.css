@@ -1,32 +1,95 @@
+/* Griffin Stepler, Project 2, CIS425 1:30pm */
+body, html {
+  height: 100%; /* this allows the image to scale to cover the whole page */
+}
 
-/* This section is from the w3schools howto on collapsibles */
+.whole {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family:'Courier New', Courier, monospace;
+  background-image: url("stairsEdit.jpg"); /* here's another one of my pictures! */
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(236, 236, 236);
+  background-color:rgb(80, 79, 79, 0.5);
+}
+
+h1 {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 30pt;
+}
+
+h4 {
+  font-size: 16pt;
+}
+
+small {
+  font-size: 8pt;
+  font-style: normal;
+}
+
+#imgHolder {
+  float: right;
+}
+
+img {
+  width: 45%;
+  height: auto;
+}
+
+scary {
+  color: rgb(216, 7, 7);
+  font-style: italic;
+}
+
+.subtext {
+  padding-left: 15px;
+}
+
+#submitButton {
+  font-family:'Courier New', Courier, monospace;
+  background-color:rgb(243, 121, 40);
+  color:black;
+  height: 40px;
+  width: 70px;
+  font-size: 15px;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-weight: bold;
+}
+
+/* This section based on the w3schools howto on collapsibles */
+/* https://www.w3schools.com/howto/howto_js_collapsible.asp */
 
 .collapsible {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-  }
+  font-family:'Courier New', Courier, monospace;
+  font-size: 16pt;
+  background-color: rgb(80, 79, 79);
+  color: rgb(236, 236, 236);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+}
   
-  .active, .collapsible:hover {
-    background-color: #ccc;
-  }
+.active, .collapsible:hover {
+  background-color: rgb(54, 54, 54);
+}
   
-  .content {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
+.content {
+  padding: 0 18px;
+  background-color: rgb(133, 133, 133);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
 
-  .collapsible:after {
-  content: '\25BC';
+.collapsible:after {
+  content: '\25BC'; /* code for solid black down triangle */
   font-size: 13px;
   color: black;
   float: right;
@@ -34,7 +97,7 @@
 }
 
 .active:after {
-  content: '\25B2';
+  content: '\25B2'; /* code for solid black up triangle */
 }
 
 /* end section based on w3schools howto */

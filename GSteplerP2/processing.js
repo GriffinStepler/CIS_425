@@ -65,7 +65,9 @@ function processQuery(err, result) {
     } else {
         // console.log(result);
         result.forEach(function (record) {
-            output += `<p>${record.title} is ${record.description}.</p> <p>It can be rented for ${record.rental_duration} days for $${record.rental_rate}`;
+            output = `<body style="background-color:rgb(80, 79, 79); font-family: 'Courier New', Courier, monospace;"><p style="color:rgb(236, 236, 236); font-weight:bold; font-size: 20pt;">Your Movie: </p>`
+            output += `<p style="color:rgb(236, 236, 236);">${record.title} is ${record.description}.</p> <p style="color:rgb(236, 236, 236);">It can be rented for ${record.rental_duration} days for $${record.rental_rate}`;
+            output += `</body>`
         });
         // output = `<p>${result[0].title} is ${result[0].description}.</p> <p>It can be rented for ${result[0].rental_duration} days for $${result[0].rental_rate}`;
         eventEmitter.emit("queryFinished");
